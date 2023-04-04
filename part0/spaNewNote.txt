@@ -1,0 +1,13 @@
+title SPA new note
+browser->server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+The request's Content-Type header tells the server 
+that the included data is represented in JSON format.
+Without this header, the server would not know 
+how to correctly parse the data.
+end note
+server-->browser:  code 201 Created
+note over browser:
+the browser stays on the same page 
+and does not send any more HTTP requests.
+end note

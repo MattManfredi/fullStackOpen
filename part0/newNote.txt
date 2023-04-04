@@ -1,0 +1,16 @@
+
+title New Note
+
+Browser->Server: HTTP POST: https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->-Browser: HTTP 302 code (notes direcction)
+note over Server:
+Code 302 its a redirection of URL. Its a request for the browser
+to make a new request HTTP GET to the location of the header
+end note
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML-code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.js
+
